@@ -10,9 +10,10 @@ button.addEventListener('click', () => {
     if (x) {
         answer = convertToRoman(x);
         span.innerText = answer;
+        span.style.color = '#516981';
     } else {
         span.innerText = 'enter number first';
-        span.style.color = 'tomato';
+        span.style.color = '#816951';
     }
     input.value = '';
     x = undefined;
@@ -78,6 +79,5 @@ function convertToRoman(num) {
             romstr += roman[i][arr[j]];
     }
 
-    console.log(romstr);
     return romstr;
 }

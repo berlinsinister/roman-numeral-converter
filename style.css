@@ -1,46 +1,45 @@
 body {
-    background-color: #eeeeee;
+    background-color: #f2eeea;
     display: flex;
     justify-content: center;
     margin-top: 100px;
     font-family: 'Roboto', sans-serif;
-    color: #757575;
+    text-transform: uppercase;
+    color: black;
 }
 
 .container {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
-    border-radius: 5px;
-    padding: 30px;
+    padding: 40px;
+    box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.5);
 }
 
 .paragraph {
-    font-size: 12pt;
+    font-size: 10pt;
 }
 
 .subparagraph {
-    font-size: 10pt;
+    font-size: 9pt;
     font-style: italic;
-    margin-top: -10px;
-}
-
-.result {
-    font-size: 20pt;
+    margin-top: -5px;
+    margin-bottom: 20px;
 }
 
 .input, button {
     width: 200px;
-    margin: 5px;
+    margin: 7px;
     padding: 15px;
-    border-radius: 30px;
-    border: none;
 }
 
 .input {
     box-sizing: border-box;
-    border: 1px solid #eeeeee;
+    background-color: transparent;
+    border: 1px solid #f2eeea;
 }
 
 .input::placeholder {
@@ -48,9 +47,12 @@ body {
 }
 
 button {
-    margin: 15px;
-    background-color: tomato;
+    background-color: #516981;
     color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    text-transform: uppercase;
+    border: none;
 }
 
 .input:focus, button:focus {
@@ -64,4 +66,8 @@ input:focus::placeholder {
 button:hover {
     filter: brightness(1.1);
     cursor: pointer;
+}
+
+b {
+    font-weight: 500;
 }
